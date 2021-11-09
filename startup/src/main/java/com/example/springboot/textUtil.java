@@ -1,16 +1,11 @@
 package com.example.springboot;
 
-import java.util.*;
+import org.apache.commons.lang3.StringUtils;
 
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Bean;
-
-
-public class TextUtils{
+public class textUtil{
+   
     public string getText(){
-        return "my func return the string";
+        String[] arr = {"my","func","return","the","string"};
+        return StringUtils.abbreviate(sentence, 16);
     }
 }
